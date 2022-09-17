@@ -1,0 +1,47 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+$main_font: 'Roboto', sans-serif;
+$second_font: 'Poppins', sans-serif;
+$footer_font: 'DM Sans', sans-serif;
+
+//$white_color: #FFFFFF;
+$main_font_color: #3D3D3F;
+$h1_font_color: #3E3E3E;
+$accent_color: #40A3F8;
+
+$nav_light_color: #6E5F5F;
+$nav_dark_color: #262323;
+
+$main_light_color: rgba(117, 117, 117, 0.46);
+$main_light_input_color: rgba(0, 0, 0, 0.3);
+$main_light_bg_input_color: rgba(245, 246, 250, 0.52);
+
+
+$light_2nd_color: #999999;
+$dark_color: rgba(61, 61, 63, 0.7);
+$dark_2nd_color: #454D5D;
+
+
+$dark_5th_color: rgba(0, 0, 0, 0.5);
+
+$light_footer_color: #646464;
+$dark_footer_color: #323232;
+
+$font-weight-medium: 500;
+
+//____________________________________________
+//CUSTOM VARIABLES BOOTSTRAP
+$gray-900:                    $main_font_color;
+$body-color:                  $gray-900;
+$blue:                        $accent_color;
+
+$font-family-base:            $main_font;
+
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.625;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1.125;
+
+
+$custom-select-indicator:  url("images/Icon.svg");
