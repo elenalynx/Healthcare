@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="position-absolute w-100">
+<header class="position-absolute w-100 pt-1 pb-1">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light align-items-center">
             <a class="navbar-brand" href="#">
@@ -45,57 +45,284 @@
 </header>
 
 <section>
-    <div class="main_banner container">
+    <div class="main_banner container p-0">
         <div class="container">
-            <div class="row">
-                <div class="description col-md-6">
-                    <h1>Find And Search
+            <div class="main_div row justify-content-between align-items-end">
+                <div class="description col-xl-6 col-lg-7 col-md-12 p-2">
+                    <h1 class="col-xl-11 col-md-8">Find And Search
                         Your<span class="d-block">Suitable Doctor’s</span></h1>
-                    <p>Join us and take care of yourself and your family with health services that will make you feel
+                    <p class="col-xl-10 col-md-8">Join us and take care of yourself and your family with health services
+                        that will make you feel
                         confident and safe in your daily life.</p>
                     <form action="#" class="form_doctor_find">
-                        <div class="form-row d-flex justify-content-between">
-                            <div class="form-group col-md-5 align-self-center">
+                        <div class="form-row d-flex justify-content-between align-items-center">
+                            <div class="div_input_doctor form-group col-lg-5 col-md-8 p-0 m-0">
                                 <label for="input_doctors_name"></label>
                                 <input id="input_doctors_name" type="text" name="doctors_name" class="form-control"
                                        placeholder="Find your doctor">
                             </div>
-                            <div class="div_input_state form-group col-md-4 align-self-center">
+                            <div class="div_input_state form-group col-lg-4 col-md-8 p-0 m-0">
                                 <label for="input_state"></label>
                                 <select id="input_state" name="state" class="form-control">
                                     <option selected>New York, USA</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="div_btn col-md-2 align-self-center">
-                                <button type="submit" class="btn"></button>
+                            <div class="div_btn col-lg-2 col-md-8 p-0 m-0">
+                                <button type="submit" class="btn p-0"></button>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="for_img col-md-6">
-                    <img src="images/main_img_woman.png" alt="img"
-                         class="main_img_woman d-block w-100 position-absolute">
-                    <img src="images/main_img_circle.png" alt="img"
-                         class="main_img_circle d-block w-100 position-absolute">
+                <div class="for_img col-xl-6 col-lg-5 col-md-12 p-2 position-relative">
+                    <div class="div_woman position-absolute">
+                        <img src="images/main_img_woman.png" alt="img"
+                             class="main_img_woman d-block">
+
+                    </div>
+                    <!--                        <div class="icons position-relative">-->
+                    <!--                            <div class="div_icons icon1 position-absolute">-->
+                    <!--                                <img src="images/icon_patient_review.svg" alt="icon" class="d-block w-100"></div>-->
+                    <!--                            <div class="div_icons icon2 position-absolute">-->
+                    <!--                                <img src="images/icon_message.svg" alt="icon" class="d-block w-100">-->
+                    <!--                            </div>-->
+                    <!--                            <div class="div_icons icon3 position-absolute">-->
+                    <!--                                <img src="images/icon_phone.svg" alt="icon" class="d-block w-100">-->
+                    <!--                            </div>-->
+                    <!--                            <div class="div_icons icon4 position-absolute">-->
+                    <!--                                <img src="images/icon_video.svg" alt="icon" class="d-block w-100">-->
+                    <!--                            </div>-->
+                    <!--                            <div class="div_icons icon5 position-absolute">-->
+                    <!--                                <img src="images/icon_patients.svg" alt="icon" class="d-block w-100">-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <div class="div_circle position-absolute">
+                        <img src="images/main_img_circle.png" alt="img"
+                             class="main_img_circle d-block">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container bg-dark h-25">
-        <p>Lordfsfsdfsfsf</p>
-        <img src="images/main_img_circle.png" alt="">
+<section class="easy_steps">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="pb-md-5 pb-sm-2">3 Easy Steps and Get Your Solution</h2>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 justify-content-md-center justify-content-md-between">
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_search.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Find best doctor’s</h3>
+                        <p class="card-text">Find your doctor easily with a minimum of effort. We've kept everything
+                            organised for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_calendar.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Get Appointment</h3>
+                        <p class="card-text">Ask for an appointment of the doctor quickly with almost a single click. We
+                            take care of the rest.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_health.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Happy Consultations</h3>
+                        <p class="card-text">Do consultations and take the service based on your appointment. Get back
+                            to good health</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="quality_service">
+    <div class="container p-lg-0">
+        <div class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center justify-content-md-between align-items-center">
+            <div class="col order-2 order-lg-1 pr-3">
+                <img src="images/Quality_doctor_.png" alt="img_doctor" class="d-block w-100">
+            </div>
+            <div class="col order-1 order-lg-2 pl-3">
+                <h2 class="mb-4">Best quality service with our experience
+                    doctors</h2>
+                <p>With our top doctors, we are able to provide best medical services above average We have highly
+                    experienced doctors, so don't worry They are also very talented in their fields</p>
+                <ul class="list-group border-0 mb-1">
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Search your specialist & Online consultations anywhere
+                    </li>
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Consultation our top specialists
+                    </li>
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Doctors are available 24/7
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary mb-2 mt-2">Explore specialists</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our_service">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="description col-md-8 text-center justify-content-center">
+                <h2>Our Service</h2>
+                <p>Our doctors have high qualified skills and are guaranteed<br> to help you recover from your disease.
+                </p>
+            </div>
+            <div class="col-12 owl-carousel owl-theme justify-content-between align-items-center">
+                <div class="item align-items-center">
+                    <div class="for_img d-flex justify-content-center">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Pulmonology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Pulmonology</h4>
+                        <p>Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Medicine.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Medicine</h4>
+                        <p>Our medicine doctor are skilled at diagnosing treating diseases of the latest medicne
+                            system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology2</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology3</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="meet_doctors">
+    <div class="container">
+        <div class="row description justify-content-center align-items-center text-center flex-column">
+            <h2 class="col-lg-9">Meet Our Certified Online Doctors</h2>
+            <img class="col-1 d-block" src="images/Titletag.png" alt="img">
+            <p class="col-11 col-sm-10 col-md-8 col-lg-6">Our online doctors have an average of 15 years experience and
+                a 98% satisfaction rating,
+                they really
+                set us apart!</p>
+        </div>
+        <div class="cards row justify-content-between align-items-center">
+            <div class="card col-sm-12 col-md-6 col-lg-3 justify-content-center align-items-start">
+                <img src="images/dr_Amanda.png" class="card-img-top d-block" alt="doctor">
+                <div class="card-body row justify-content-center align-items-center">
+                    <h4 class="card-title col-12">Card title</h4>
+                    <p class="card-text col-12">Some quick example </p>
+                    <div class="row social justify-content-center align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 justify-content-center align-items-start">
+                <img src="images/dr_Amanda.png" class="card-img-top d-block" alt="doctor">
+                <div class="card-body row justify-content-center align-items-center">
+                    <h4 class="card-title col-12">Card title</h4>
+                    <p class="card-text col-12">Some quick example </p>
+                    <div class="row social justify-content-center align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 justify-content-center align-items-start">
+                <img src="images/dr_Amanda.png" class="card-img-top d-block" alt="doctor">
+                <div class="card-body row justify-content-center align-items-center">
+                    <h4 class="card-title col-12">Card title</h4>
+                    <p class="card-text col-12">Some quick example </p>
+                    <div class="row social justify-content-center align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-3 justify-content-center align-items-start">
+                <img src="images/dr_Amanda.png" class="card-img-top d-block" alt="doctor">
+                <div class="card-body row justify-content-center align-items-center">
+                    <h4 class="card-title col-12">Card title</h4>
+                    <p class="card-text col-12">Some quick example </p>
+                    <div class="row social justify-content-center align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center after-posts">
+                <button type="button" class="btn btn-primary load-more">
+                    Explore All Doctors
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">
+                    </span>
+                </button>
+            </div>
+        </div>
+
     </div>
 </section>
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <!--<script src="js/bootstrap.js"></script>-->
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/owl.carousel.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/d5c2e0a29b.js" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>

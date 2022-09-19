@@ -18,12 +18,15 @@ $main_light_input_color: rgba(0, 0, 0, 0.3);
 $main_light_bg_input_color: rgba(245, 246, 250, 0.52);
 
 
-$light_2nd_color: #999999;
-$dark_color: rgba(61, 61, 63, 0.7);
+$steps_light_color: rgba(0, 0, 0, 0.5);
+$service_light_color: rgba(61, 61, 63, 0.7);
+$carousel_light_color: #999999;
+$carousel_dots_light_color: #DBE8EE;
+
+
 $dark_2nd_color: #454D5D;
 
 
-$dark_5th_color: rgba(0, 0, 0, 0.5);
 
 $light_footer_color: #646464;
 $dark_footer_color: #323232;
@@ -32,6 +35,14 @@ $font-weight-medium: 500;
 
 //____________________________________________
 //CUSTOM VARIABLES BOOTSTRAP
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1170px,
+);
+
 $gray-900:                    $main_font_color;
 $body-color:                  $gray-900;
 $blue:                        $accent_color;

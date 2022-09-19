@@ -1,0 +1,28 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin background($property) {
+  -webkit-flex-direction: $property;
+  -o-flex-background: $property;
+  -moz-flex-background: $property;
+  -ms-flex-background: $property;
+  background: $property;
+}
+
+
+@mixin flex-direction($property) {
+  -webkit-flex-direction: $property;
+  -o-flex-direction: $property;
+  -moz-flex-direction: $property;
+  -ms-flex-direction: $property;
+  flex-direction: $property;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
