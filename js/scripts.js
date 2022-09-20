@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.owl-carousel').owlCarousel({
+    $('.service_carousel').owlCarousel({
         loop: true,
         dots: true,
         dotsEach: true,
@@ -12,8 +12,34 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 2000,
 
+        nav: false,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            767: {
+                items: 2
+            },
+            992: {
+                items: 3
+            },
+        }
+    });
+
+    $('.reviews_carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        center: true,
+        // items: 3,
+        // slideBy: 1,
+
+        autoplay: true,
+        autoplayTimeout: 2000,
+        dots: false,
         nav: true,
-        navText: ['', ' '],
+        navText: [' ', ' '],
 
         responsive: {
             0: {
