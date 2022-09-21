@@ -7,18 +7,51 @@
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
 
+
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  z-index: 1;
+  @include background(url("../images/bg_site.jpg") no-repeat center center);
+  background-size: cover;
+  position: relative;
+}
+
 html {
-  //font-family: $main_font !important;
-  //font-style: $main_font_style !important;
-  //font-weight: $main_font_weight_400 !important;
-  //font-size: $main_font_size !important;
-  //line-height: $main_line_height !important;
-  //color: $main_font_color !important;
+  font-size: 0.7rem;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: 1rem;
+  }
 }
 
 h1 {
@@ -39,16 +72,9 @@ h4 {
 
 }
 
-body {
-  z-index: 1;
-  @include background(url("../images/bg_site.jpg") no-repeat center center);
-  background-size: cover;
-  position: relative;
-}
-
+//_____________________________________________________________
 header {
   z-index: 3;
-
 
   .navbar-nav {
     .nav-item {
@@ -63,10 +89,18 @@ header {
 
         &.btn {
           color: $white;
+          background: $blue;
+          border: 1px solid $blue;
+
+          &:hover {
+            color: $blue;
+            background: $white;
+          }
         }
 
         &:hover {
           color: $blue;
+          //transition: all 0.3s ease-in-out;
         }
       }
     }
@@ -91,9 +125,6 @@ header {
   //width: max-content;
   //height: max-content;
   //}
-
-  .main_div {
-  }
 
   .description {
     align-items: center;
@@ -266,13 +297,10 @@ header {
     .icons {
       max-width: 588px;
       margin: auto;
-
-
     }
 
     .div_icons {
       z-index: 6;
-
 
       img {
         filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.05));
@@ -361,13 +389,22 @@ header {
     position: relative;
     background: $blue;
     color: $white;
-    border: none;
+    border: 1px solid $blue;
 
     &:after {
       content: url("../images/icon_arrow-right.svg");
       position: absolute;
       top: 12px;
       right: 18px;
+    }
+
+    &:hover {
+      color: $blue;
+      background: $white;
+
+      &:after {
+        content: url("../images/icon_check.svg");
+      }
     }
   }
 }
@@ -623,58 +660,71 @@ header {
 .reviews {
   padding-bottom: 11.19rem;
 
+  > .container {
+    max-width: 1375px;
+    margin: auto;
+  }
+
   h2 {
     margin-bottom: 4.25rem;
   }
 
-  p {
-    margin: 0;
-    color: $review_dark_color;
-    line-height: 1.56rem;
-  }
-
   .reviews_carousel {
-    padding-top: 1.56rem;
-    padding-bottom: 1.19rem;
+    padding: 1.56rem 6rem 1.19rem 6.25rem;
+    width: 100%;
 
     .card {
       padding: 1.31rem 1.06rem 2rem 3rem;
       background: linear-gradient(132.1deg, rgba(255, 255, 255, 0.88) 0.65%, #FAFAFA 103.13%);
       /* Shadow */
-
       box-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
       border-radius: 10px;
       border: none;
+      height: 370px;
+      width: 100%;
+      object-fit: cover;
 
       .card-img-top {
         max-width: 63px;
-        //width: 100%;
+        width: 100%;
         height: 63px;
         margin: auto;
         border-radius: 50%;
+        border: none;
       }
 
-      .description {
-        margin-top: 0.56rem;
-        margin-bottom: 1.31rem;
-
-        h4 {
-          //line-height: 2;
-          //margin-bottom: 2rem;
-
+      .card-body {
+        > p {
+          color: $review_dark_color;
+          line-height: 1.56rem;
+          //overflow: clip;
+          margin: auto;
         }
 
-        p {
-          font-size: 0.875rem;
-          line-height: 1.04rem;
-          background: linear-gradient(90.26deg, #47C2FF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          //background-clip: text;
-          text-fill-color: transparent;
+        .description {
+          margin-top: 0.56rem;
+          margin-bottom: 1.31rem;
+
+          blockquote {
+
+            word-wrap: break-word;
+            overflow: hidden;
+
+            p {
+              font-size: 0.875rem;
+              line-height: 1.04rem;
+              background: linear-gradient(90.26deg, #47C2FF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              //background-clip: text;
+              text-fill-color: transparent;
+
+
+            }
+
+          }
         }
       }
-
     }
 
     .owl-nav {
@@ -682,7 +732,7 @@ header {
 
       .owl-prev {
         position: absolute;
-        left: -70px;
+        left: 0;
         top: 45%;
 
         &:before {
@@ -696,20 +746,23 @@ header {
           padding: 7px 11px;
           display: inline-block;
 
+        }
 
-          &:hover,
-          &:focus,
-          &:active {
-            content: url("../images/arow_right_white.svg") !important;
-            background: $blue !important;
-            transform: rotateY(180deg) !important;
+        &:hover,
+        &:focus,
+        &:active {
+          background: $blue;
+
+          &:before {
+            content: url("../images/arow_right_white.svg");
+            transform: rotateY(180deg);
           }
         }
       }
 
       .owl-next {
         position: absolute;
-        right: -70px;
+        right: 0;
         top: 45%;
 
         &:before {
@@ -724,8 +777,67 @@ header {
           transform: rotateY(180deg);
           display: inline-block;
         }
+
+        &:hover,
+        &:active,
+        {
+          background: $blue;
+
+          &:before {
+            content: url("../images/arow_right_white.svg");
+            transform: rotateY(0deg);
+          }
+        }
       }
     }
   }
 }
 
+//__________________________________
+//CALL TO ACTION
+
+.call_to_action {
+  padding-bottom: 7.7em;
+
+  .container {
+    background-color: $blue;
+    border-radius: 12px;
+
+    .description {
+      margin-top: 5.125rem;
+      margin-bottom: 5.75rem;
+
+      h2 {
+        color: $white;
+        line-height: 1.175;
+        margin-bottom: 21px;
+        text-transform: capitalize;
+      }
+
+      .btn {
+        font-size: 1.125rem;
+        line-height: 1.67;
+        padding: 1rem 1.125rem .94rem;
+        background: $white;
+        box-shadow: 0 4px 22px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        border: 1px solid  $blue;
+        color: $blue;
+
+        &:hover {
+          color: $white;
+          background: $blue;
+          border: 1px solid  $white;
+
+        }
+      }
+      .for_img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        max-width: 600px;
+        margin: auto;
+      }
+    }
+  }
+}

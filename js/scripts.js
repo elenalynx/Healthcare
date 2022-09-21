@@ -31,8 +31,9 @@ $(document).ready(function () {
     $('.reviews_carousel').owlCarousel({
         loop: true,
         margin: 30,
-        center: true,
-        // items: 3,
+        items: 3,
+        // autoWidth: true,
+        // center: true,
         // slideBy: 1,
 
         autoplay: true,
@@ -46,14 +47,16 @@ $(document).ready(function () {
                 items: 1
             },
 
-            767: {
+            576: {
                 items: 2
             },
             992: {
                 items: 3
             },
         }
+
     });
+
 
     $('.step-slider').on('changed.owl.carousel', function (event) {
         var idx = event.item.index; // номер активного элемента

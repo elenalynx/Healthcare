@@ -5,7 +5,7 @@ $main_font: 'Roboto', sans-serif;
 $second_font: 'Poppins', sans-serif;
 $footer_font: 'DM Sans', sans-serif;
 
-//$white_color: #FFFFFF;
+$white_color: #FFFFFF;
 $main_font_color: #3D3D3F;
 $h1_font_color: #3E3E3E;
 $accent_color: #40A3F8;
@@ -46,6 +46,7 @@ $container-max-widths: (
 $gray-900:                    $main_font_color;
 $body-color:                  $gray-900;
 $blue:                        $accent_color;
+$white:                       $white_color;
 
 $font-family-base:            $main_font;
 
