@@ -5,8 +5,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "owl.carousel.css";
-@import "owl.theme.default.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
