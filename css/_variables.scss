@@ -17,16 +17,11 @@ $main_light_color: rgba(117, 117, 117, 0.46);
 $main_light_input_color: rgba(0, 0, 0, 0.3);
 $main_light_bg_input_color: rgba(245, 246, 250, 0.52);
 
-
 $steps_light_color: rgba(0, 0, 0, 0.5);
 $p_light_color: rgba(61, 61, 63, 0.7);
 $carousel_light_color: #999999;
 $carousel_dots_light_color: #DBE8EE;
 $review_dark_color: #454D5D;
-
-
-
-
 
 $light_footer_color: #646464;
 $dark_footer_color: #323232;
@@ -49,6 +44,11 @@ $blue:                        $accent_color;
 $white:                       $white_color;
 
 $font-family-base:            $main_font;
+
+$link-color:                  $light_footer_color;
+$nav-link-padding-x:          0;
+$primary:                     $blue;
+
 
 $h1-font-size:                $font-size-base * 3;
 $h2-font-size:                $font-size-base * 2.625;

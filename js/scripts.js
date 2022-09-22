@@ -1,65 +1,69 @@
 $(document).ready(function () {
+    if (document.documentElement.clientWidth > 576) {
+
+
+        $('.reviews_carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            items: 3,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            dots: false,
+            nav: true,
+            navText: [' ', ' '],
+
+            responsive: {
+                0: {
+                    items: 1,
+                    loop: false,
+                    autoplay: false,
+                    autoplayTimeout: 0,
+                    nav: false,
+                    navText: false,
+                },
+                576: {
+                    items: 1,
+                },
+                767: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+            }
+        });
+    }
+
 
     $('.service_carousel').owlCarousel({
         loop: true,
+        nav: false,
         dots: true,
         dotsEach: true,
         margin: 65,
         center: true,
-        // items: 3,
-        // slideBy: 1,
-
         autoplay: true,
         autoplayTimeout: 2000,
 
-        nav: false,
-
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                // margin: 65,
             },
-
+            // 567: {
+            //
+            // },
             767: {
-                items: 2
+                items: 2,
+                margin: 35,
             },
-            992: {
-                items: 3
-            },
-        }
-    });
-
-    $('.reviews_carousel').owlCarousel({
-        loop: true,
-        margin: 30,
-        items: 3,
-        // autoWidth: true,
-        // center: true,
-        // slideBy: 1,
-
-        autoplay: true,
-        autoplayTimeout: 2000,
-        dots: false,
-        nav: true,
-        navText: [' ', ' '],
-
-        responsive: {
-            0: {
-                items: 1
-            },
-
-            576: {
-                items: 2
-            },
-            992: {
-                items: 3
+            // 992: {
+            //     // margin: 35,
+            // },
+            1200: {
+                items: 3,
             },
         }
-
-    });
-
-
-    $('.step-slider').on('changed.owl.carousel', function (event) {
-        var idx = event.item.index; // номер активного элемента
     });
 
 
@@ -80,7 +84,7 @@ $(document).ready(function () {
                         loader.removeClass('d-inline-block');
                         btn.attr('disabled', false);
                         // console.log(responce);
-                    $('.after-posts').before(responce);
+                        $('.after-posts').before(responce);
                     }, 1000);
                 },
                 error: function () {
@@ -92,3 +96,41 @@ $(document).ready(function () {
         })
     });
 });
+
+
+// $('.step-slider').on('changed.owl.carousel', function (event) {
+//     var idx = event.item.index; // номер активного элемента
+// });
+
+// _________________________________________________
+// if ($(window).width() > 700) {
+//     $(document).ready(function () {
+//         $(".reviews_carousel").owlCarousel({
+//             loop: true,
+//             margin: 30,
+//             items: 3,
+//             // autoWidth: true,
+//             // center: true,
+//             // slideBy: 1,
+//
+//             autoplay: true,
+//             autoplayTimeout: 2000,
+//             dots: false,
+//             nav: true,
+//             navText: [' ', ' '],
+//
+//             responsive: {
+//                 0: {
+//                     items: 1
+//                 },
+//
+//                 767: {
+//                     items: 2
+//                 },
+//                 992: {
+//                     items: 3
+//                 },
+//             }
+//         });
+//     });
+// }
