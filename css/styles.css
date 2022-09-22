@@ -18501,10 +18501,27 @@ h3 {
 header {
   z-index: 3;
 }
+@media screen and (max-width: 992px) {
+  header .navbar-nav {
+    background-color: #40A3F8;
+    opacity: 0.8;
+    border: 1px solid #40A3F8;
+    border-radius: 40px 0 0 0;
+    text-align: center;
+    width: 100vw;
+    font-size: 1.2rem;
+  }
+}
 header .navbar-nav .nav-item .nav-link {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #6E5F5F;
+}
+@media screen and (max-width: 992px) {
+  header .navbar-nav .nav-item .nav-link {
+    color: #FFFFFF;
+    padding: 1rem;
+  }
 }
 header .navbar-nav .nav-item .nav-link.dark-link {
   color: #262323;
@@ -18514,12 +18531,26 @@ header .navbar-nav .nav-item .nav-link.btn {
   background: #40A3F8;
   border: 1px solid #40A3F8;
 }
+@media screen and (max-width: 992px) {
+  header .navbar-nav .nav-item .nav-link.btn {
+    text-align: center;
+    font-size: 1.4rem;
+    border: none;
+  }
+}
 header .navbar-nav .nav-item .nav-link.btn:hover {
   color: #40A3F8;
   background: #FFFFFF;
 }
 header .navbar-nav .nav-item .nav-link:hover {
   color: #40A3F8;
+}
+@media screen and (max-width: 992px) {
+  header .navbar-nav .nav-item .nav-link:hover {
+    color: #40A3F8;
+    background: #FFFFFF;
+    border: 1px solid #40A3F8;
+  }
 }
 
 .main_banner {

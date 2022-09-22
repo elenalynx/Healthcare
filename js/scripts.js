@@ -1,7 +1,6 @@
 $(document).ready(function () {
+
     if (document.documentElement.clientWidth > 576) {
-
-
         $('.reviews_carousel').owlCarousel({
             loop: true,
             margin: 30,

@@ -19,6 +19,7 @@ body {
   line-height: $line-height-base;
 }
 
+
 .wrapper {
   &.container {
     max-width: 1440px;
@@ -82,12 +83,30 @@ h4 {
 header {
   z-index: 3;
 
+
   .navbar-nav {
+    @include max-screen(992px) {
+      background-color: $blue;
+      opacity: 0.8;
+      border: 1px solid $blue;
+      border-radius: 40px 0 0 0;
+      text-align: center;
+      width: 100vw;
+      font-size: 1.2rem;
+
+    }
+
+
     .nav-item {
       .nav-link {
         font-family: $second_font;
         font-weight: $font-weight-medium;
         color: $nav_light_color;
+
+        @include max-screen(992px) {
+          color: $white;
+          padding: 1rem;
+        }
 
         &.dark-link {
           color: $nav_dark_color;
@@ -97,20 +116,34 @@ header {
           color: $white;
           background: $blue;
           border: 1px solid $blue;
+          @include max-screen(992px) {
+            text-align: center;
+            font-size: 1.4rem;
+            border: none;
+          }
 
           &:hover {
             color: $blue;
             background: $white;
+
+
           }
         }
 
         &:hover {
           color: $blue;
           //transition: all 0.3s ease-in-out;
+
+          @include max-screen(992px) {
+            color: $blue;
+            background: $white;
+            border: 1px solid $blue;
+          }
         }
       }
     }
   }
+
 }
 
 //_______________________________________________
@@ -994,5 +1027,4 @@ header {
     }
   }
 }
-
 
