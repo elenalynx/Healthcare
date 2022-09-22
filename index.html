@@ -9,546 +9,537 @@
     <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<div class="wrapper container p-0">
-    <header class="position-absolute w-100 pt-1 pb-1">
+<body class="wrapper">
+<header class="position-absolute w-100 pt-1 pb-1">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center justify-content-lg-end"
+                 id="navbarSupportedContent">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">Article</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link dark-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary last-item" href="#" role="button">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="main">
+    <div class="main_banner container-fluid p-0">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light align-items-center">
-                <a class="navbar-brand" href="#">
+            <div class="main_div row justify-content-center justify-content-lg-between align-items-end">
+                <div class="description col-xl-6 col-lg-7 col-md-12 p-2">
+                    <h1 class="col-xl-11 col-md-8">Find And Search
+                        Your<span class="d-block">Suitable Doctor’s</span></h1>
+                    <p class="col-xl-10 col-md-8">Join us and take care of yourself and your family with health
+                        services
+                        that will make you feel
+                        confident and safe in your daily life.</p>
+                    <div class="col-12 col-md-6 col-lg-12">
+
+                        <form action="#"
+                              class="form_doctor_find row d-flex justify-content-center justify-content-md-between align-items-center">
+                            <div class="div_input_doctor form-group col-12 col-md-12 col-lg-5  p-md-0 m-0 d-flex align-items-center">
+                                <label for="input_doctors_name"></label>
+                                <input id="input_doctors_name" type="text" name="doctors_name" class="form-control"
+                                       placeholder="Find your doctor">
+                            </div>
+                            <div class="div_input_state form-group col-12 col-md-12 col-lg-4  p-md-0 m-0 d-flex align-items-center">
+                                <label for="input_state"></label>
+                                <select id="input_state" name="state" class="form-control">
+                                    <option selected>New York, USA</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="div_btn col-12 col-md-12 col-lg-2  p-md-0 m-0 d-flex align-items-center justify-content-end">
+                                <button type="submit" class="btn p-0"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="for_img col-xl-6 col-lg-5 col-md-12 p-2 position-relative">
+                    <div class="div_woman position-absolute">
+                        <img src="images/main_img_woman1.png" alt="img"
+                             class="main_img_woman d-block">
+                    </div>
+
+                    <div class="div_circle position-absolute">
+                        <img src="images/main_img_circle.png" alt="img"
+                             class="main_img_circle d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="scrollflow -opacity -slide-top easy_steps">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-3 justify-content-md-center justify-content-md-between align-items-center">
+            <div class="col col-sm-12 pb-md-5 pb-sm-2 text-center align-items-center">
+                <h2>3 Easy Steps and Get Your Solution</h2>
+            </div>
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_search.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Find best doctor’s</h3>
+                        <p class="card-text">Find your doctor easily with a minimum of effort. We've kept everything
+                            organised for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_calendar.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Get Appointment</h3>
+                        <p class="card-text">Ask for an appointment of the doctor quickly with almost a single
+                            click. We
+                            take care of the rest.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col pb-2">
+                <div class="card h-100 align-items-center">
+                    <img src="images/img_health.svg" alt="img" class="card-img-top">
+                    <div class="card-body p-0 text-center">
+                        <h3 class="card-title mb-1.5">Happy Consultations</h3>
+                        <p class="card-text">Do consultations and take the service based on your appointment. Get
+                            back
+                            to good health</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quality_service scrollflow -opacity -slide-right">
+    <div class="container p-lg-0">
+        <div class="row justify-content-center align-items-center">
+            <div class="for_img col col-9 col-md-8 col-lg-6 p-lg-0 order-2 order-lg-1">
+                <img src="images/Quality_doctor_.png" alt="img_doctor" class="d-block w-100">
+            </div>
+            <div class="col col-12 col-lg-5 p-lg-0 order-1 order-lg-2 justify-content-center justify-content-lg-start text-center text-lg-left">
+                <h2 class="mb-4">Best quality service with our experience
+                    doctors</h2>
+                <p>With our top doctors, we are able to provide best medical services above average We have highly
+                    experienced doctors, so don't worry They are also very talented in their fields</p>
+                <ul class="list-group border-0 m-2 m-lg-0 justify-content-start text-left">
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Search your specialist & Online consultations anywhere
+                    </li>
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Consultation our top specialists
+                    </li>
+                    <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
+                        <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
+                        Doctors are available 24/7
+                    </li>
+                </ul>
+                <a href="#doctor" class="btn btn-primary mb-2 mt-2">Explore specialists</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="our_service scrollflow -opacity -slide-top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="description col-md-8 text-center justify-content-center">
+                <h2>Our Service</h2>
+                <p>Our doctors have high qualified skills and are guaranteed<br> to help you recover from your
+                    disease.
+                </p>
+            </div>
+            <div class="col-12 owl-carousel service_carousel owl-theme justify-content-between align-items-center">
+                <div class="item align-items-center">
+                    <div class="for_img d-flex justify-content-center">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Pulmonology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Pulmonology</h4>
+                        <p>Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology
+                            system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Medicine.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Medicine</h4>
+                        <p>Our medicine doctor are skilled at diagnosing treating diseases of the latest medicne
+                            system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology2</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+                <div class="item align-items-center">
+                    <div class="for_img">
+                        <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
+                    </div>
+                    <div class="text-center">
+                        <h4>Cardiology3</h4>
+                        <p>Our cardiologists are skilled at the diagnosing and treating diseases
+                            of the cardiovascular system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="meet_doctors scrollflow -opacity -slide-left" id="doctor">
+    <div class="container">
+        <div class="row description justify-content-center justify-content-md-between align-items-center text-center flex-sm-column">
+            <h2 class="col-lg-9">Meet Our Certified Online Doctors</h2>
+            <img class="col-1 d-block" src="images/Titletag.png" alt="img">
+            <p class="col-11 col-sm-10 col-md-8 col-lg-6">Our online doctors have an average of 15 years experience
+                and
+                a 98% satisfaction rating,
+                they really
+                set us apart!</p>
+        </div>
+        <div class="cards row row-cols-1 row-cols-lg-2 row-cols-xl-4 justify-content-center">
+
+            <div class="card col justify-content-center align-items-center">
+                <div class="for_img view_img row justify-content-center align-items-center">
+                    <img src="images/doctor_Linda.jpg" class="col card-img-top d-block p-0" alt="doctor">
+                </div>
+                <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
+                    <h4 class="card-title col-12">Dr Amanda Linda</h4>
+                    <p class="card-text col-12">Dentist Specialist</p>
+                    <div class="row social justify-content-between align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col justify-content-center align-items-center">
+                <div class="for_img view_img row justify-content-center align-items-center">
+                    <img src="images/doctor_Rahman.jpg" class="col card-img-top d-block p-0" alt="doctor">
+                </div>
+                <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
+                    <h4 class="card-title col-12">Dr. Alisa Rahman</h4>
+                    <p class="card-text col-12">Cardiologist Specialist</p>
+                    <div class="row social justify-content-between align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col justify-content-center align-items-center">
+                <div class="for_img view_img row justify-content-center align-items-center">
+                    <img src="images/doctor_Fauci.jpg" class="col card-img-top d-block p-0" alt="doctor">
+                </div>
+                <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
+                    <h4 class="card-title col-12">Dr. Anthony Fauci</h4>
+                    <p class="card-text col-12">Neurology Specialist</p>
+                    <div class="row social justify-content-between align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col justify-content-center align-items-center">
+                <div class="for_img view_img row justify-content-center align-items-center">
+                    <img src="images/doctor_Abbed.jpg" class="col card-img-top d-block p-0" alt="doctor">
+                </div>
+                <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
+                    <h4 class="card-title col-12">Dr. Khalid Abbed</h4>
+                    <p class="card-text col-12">Cancer Specialist</p>
+                    <div class="row social justify-content-between align-items-center d-flex">
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-1 justify-content-center text-center after-posts">
+            <button type="button" class="btn btn-primary load-more">
+                Explore All Doctors
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">
+                    </span>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="mobile_apps scrollflow -opacity -slide-right">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col col-9 col-md-8 col-lg-7 p-lg-0 order-2 order-lg-1 d-none d-sm-block">
+                <img class="d-block w-100" src="images/Mockup.png" alt="mobile">
+            </div>
+            <div class="col col-12 col-lg-5 p-lg-0 order-1 order-lg-2 justify-content-start align-items-center">
+                <h2>Mobile apps are available
+                    Get HealthCare for free!
+                </h2>
+                <p>Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and
+                    register on our app for free and feel safe for all your family</p>
+                <div class="for_img d-flex justify-content-center justify-content-lg-start align-items-center">
+                    <a href="#"><img class="d-block mr-2 mr-sm-4 mr-lg-2" src="images/Google_Play.png"
+                                     alt="Google Play"></a>
+                    <a href="#"><img class="d-block" src="images/App_Store.png" alt="App Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews scrollflow -opacity -slide-top">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col col-12 col-lg-9 p-lg-0 description text-center justify-content-center align-items-center">
+                <h2>Look our Clients have to say about us</h2>
+            </div>
+            <div class="row card-deck reviews_carousel owl-carousel owl-theme justify-content-between align-items-center">
+                <div class="col card m-2 m-md-0">
+                    <img class="card-img-top" src="images/client_1.png" alt="client">
+                    <div class="card-body p-0">
+                        <div class="row description justify-content-between">
+                            <div class="col col-8">
+                                <h4>Alan Zara dilan</h4>
+                                <p>New York, America, USA</p>
+                            </div>
+                            <div class="col col-4">
+                                <img class="d-block" src="images/stars_5.svg" alt="stars">
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has
+                                brought
+                                a
+                                great
+                                revolution in medical services specially an overpopulated country where virtual
+                                chamber
+                                can
+                                create at anywhere throughout country
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col card m-2 m-md-0">
+                    <img class="card-img-top" src="images/client_2.png" alt="client">
+                    <div class="card-body p-0">
+                        <div class="row description justify-content-between">
+                            <div class="col col-8">
+                                <h4>Alex Maxwell</h4>
+                                <p>San Francisco, USA</p>
+                            </div>
+                            <div class="col col-4">
+                                <img class="d-block" src="images/stars_5.svg" alt="stars">
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>I visited my PCP for abdominal pain. My doctor told me that I need to see
+                                Gastroenterologist.
+                                Earlier I used to call multiple offices to schedule an appointment that suites
+                                my
+                                time.</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col card m-2 m-md-0">
+                    <img class="card-img-top" src="images/client_3.png" alt="client">
+                    <div class="card-body p-0">
+                        <div class="row description justify-content-between">
+                            <div class="col col-8">
+                                <h4>Dr. Tasnim zara</h4>
+                                <p>Los Angeles, USA</p>
+                            </div>
+                            <div class="col col-4">
+                                <img class="d-block" src="images/stars_5.svg" alt="stars">
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>HealthCare is enlightens my superpower each and every time...!
+                                I find DocTime a brand-able telemedicine platform with virtual waiting room,
+                                video
+                                consultation, e-prescription, beautifully planned user interface.
+                                Thank you :)</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="call_to_action scrollflow -opacity -slide-right">
+    <div class="container">
+        <div class="row content justify-content-start justify-content-lg-between align-items-center">
+            <div class="description col col-sm-8 col-md-6 col-lg-5 offset-1 pr-1 pl-1 pr-lg-0 pl-lg-0 justify-content-md-center justify-content-lg-start align-items-center">
+                <h2>It’s time change your
+                    life today</h2>
+                <button class="btn btn-outline-primary" type="submit">Book an Appoinment</button>
+            </div>
+            <div class="col col-md-6 col-lg-6 doctor_woman p-0">
+                <img src="images/doctor_2.png" alt="img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="page_footer bg-white pb-4 pt-4">
+    <div class="container">
+        <div class="row footer_first d-flex justify-content-center justify-content-md-between align-items-start">
+            <div class="contact_info col-8 col-sm-7 col-md-4 p-2 p-lg-0 justify-content-center justify-content-md-start text-center text-md-left">
+                <a class="logo" href="#">
                     <img src="images/logo.svg" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <p>Metairie, 3689 Bassel Street, LA, Louisiana</p>
+                <p>Contact us: 225-788-5489</p>
 
-                <div class="collapse navbar-collapse justify-content-center justify-content-lg-end"
-                     id="navbarSupportedContent">
-                    <ul class="navbar-nav nav">
-                        <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link" href="#">Article</a>
-                        </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link dark-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary last-item" href="#" role="button">Get Started</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+                <ul class="nav justify-content-center justify-content-md-start d-md-flex">
+                    <li class="nav-item pr-0 pr-sm-2 mr-2">
+                        <a href="#"><img src="images/Facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="nav-item pr-0 pr-sm-2 mr-2">
+                        <a href="#"><img src="images/Instagram.svg" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="nav-item pr-0 pr-sm-2 mr-2">
+                        <a href="#"><img src="images/Twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="nav-item pr-0 pr-sm-2 mr-2">
+                        <a href="#"><img src="images/Youtube.svg" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <section class="main">
-        <div class="main_banner container-fluid p-0">
-            <div class="container">
-                <div class="main_div row justify-content-center justify-content-lg-between align-items-end">
-                    <div class="description col-xl-6 col-lg-7 col-md-12 p-2">
-                        <h1 class="col-xl-11 col-md-8">Find And Search
-                            Your<span class="d-block">Suitable Doctor’s</span></h1>
-                        <p class="col-xl-10 col-md-8">Join us and take care of yourself and your family with health
-                            services
-                            that will make you feel
-                            confident and safe in your daily life.</p>
-                        <div class="col-12 col-md-6 col-lg-12">
+            <div class="footer_menu col-6 col-md-2 p-2 p-lg-0 text-center text-md-left">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <h4><a class="nav-link disabled" href="#">Category</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Article</a>
+                    </li>
+                </ul>
+            </div>
 
-                            <form action="#"
-                                  class="form_doctor_find row d-flex justify-content-center justify-content-md-between align-items-center">
-                                <!--                            <div class="form-row d-flex justify-content-between align-items-center">-->
-                                <div class="div_input_doctor form-group col-12 col-md-12 col-lg-5  p-md-0 m-0 d-flex align-items-center">
-                                    <label for="input_doctors_name"></label>
-                                    <input id="input_doctors_name" type="text" name="doctors_name" class="form-control"
-                                           placeholder="Find your doctor">
-                                </div>
-                                <div class="div_input_state form-group col-12 col-md-12 col-lg-4  p-md-0 m-0 d-flex align-items-center">
-                                    <label for="input_state"></label>
-                                    <select id="input_state" name="state" class="form-control">
-                                        <option selected>New York, USA</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="div_btn col-12 col-md-12 col-lg-2  p-md-0 m-0 d-flex align-items-center justify-content-end">
-                                    <button type="submit" class="btn p-0"></button>
-                                </div>
-                                <!--                            </div>-->
-                            </form>
-                        </div>
+            <div class="footer_menu col-6 col-md-2 p-2 p-lg-0 text-center text-md-left">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <h4><a class="nav-link disabled" href="#">About</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Press</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe col-md-12 col-lg-4 p-3 p-lg-0 text-center text-lg-left">
+                <h4 class="nav-link disabled">Subscribe newsletter</h4>
+                <p>Sign up for tips, new destinations, and exclusive promos.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                               aria-describedby="emailHelp" placeholder="Enter your email">
                     </div>
-                    <div class="for_img col-xl-6 col-lg-5 col-md-12 p-2 position-relative">
-                        <div class="div_woman position-absolute">
-                            <img src="images/main_img_woman1.png" alt="img"
-                                 class="main_img_woman d-block">
-
-                        </div>
-
-                        <div class="div_circle position-absolute">
-                            <img src="images/main_img_circle.png" alt="img"
-                                 class="main_img_circle d-block">
-                        </div>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Subcribe</button>
+                </form>
             </div>
         </div>
-    </section>
-
-    <section class="scrollflow -opacity -slide-top easy_steps">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-3 justify-content-md-center justify-content-md-between align-items-center">
-                <div class="col col-sm-12 pb-md-5 pb-sm-2 text-center align-items-center">
-                    <h2>3 Easy Steps and Get Your Solution</h2>
-                </div>
-                <div class="col pb-2">
-                    <div class="card h-100 align-items-center">
-                        <img src="images/img_search.svg" alt="img" class="card-img-top">
-                        <div class="card-body p-0 text-center">
-                            <h3 class="card-title mb-1.5">Find best doctor’s</h3>
-                            <p class="card-text">Find your doctor easily with a minimum of effort. We've kept everything
-                                organised for you.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col pb-2">
-                    <div class="card h-100 align-items-center">
-                        <img src="images/img_calendar.svg" alt="img" class="card-img-top">
-                        <div class="card-body p-0 text-center">
-                            <h3 class="card-title mb-1.5">Get Appointment</h3>
-                            <p class="card-text">Ask for an appointment of the doctor quickly with almost a single
-                                click. We
-                                take care of the rest.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col pb-2">
-                    <div class="card h-100 align-items-center">
-                        <img src="images/img_health.svg" alt="img" class="card-img-top">
-                        <div class="card-body p-0 text-center">
-                            <h3 class="card-title mb-1.5">Happy Consultations</h3>
-                            <p class="card-text">Do consultations and take the service based on your appointment. Get
-                                back
-                                to good health</p>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="container-fluid"></div>
+</footer>
+<footer class="page_footer2 pt-1">
+    <div class="container">
+        <div class="footer_second row justify-content-between">
+            <div class="col col-12 col-sm-5 col-md-4 footer-copyright order-2 order-sm-1 d-flex justify-content-around justify-content-sm-between">
+                <p>© 2021 Healthcare - All rights reserved.</p>
+            </div>
+            <div class="col col-12 col-sm-5 col-md-4 order-1 order-sm-2">
+                <ul class="d-flex justify-content-around justify-content-sm-between">
+                    <li class="pr-2"><a href="#">Privacy</a></li>
+                    <li class="pr-2"><a href="#">Security</a></li>
+                    <li class="pr-2"><a href="#">Terms</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section class="quality_service scrollflow -opacity -slide-right">
-        <div class="container p-lg-0">
-            <!--        <div class="row row-cols-1 row-cols-lg-2 d-flex justify-content-center justify-content-md-between align-items-center">-->
-            <!--            <div class="col order-2 order-lg-1 pr-3">-->
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-9 col-md-8 col-lg-6 p-lg-0 order-2 order-lg-1">
-                    <img src="images/Quality_doctor_.png" alt="img_doctor" class="d-block w-100">
-                </div>
-                <!--            <div class="col order-1 order-lg-2 pl-3">-->
-                <div class="col col-12 col-lg-5 p-lg-0 order-1 order-lg-2 justify-content-center justify-content-lg-start text-center text-lg-left">
-                    <h2 class="mb-4">Best quality service with our experience
-                        doctors</h2>
-                    <p>With our top doctors, we are able to provide best medical services above average We have highly
-                        experienced doctors, so don't worry They are also very talented in their fields</p>
-                    <ul class="list-group border-0 m-2 m-lg-0 justify-content-start text-left">
-                        <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
-                            <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
-                            Search your specialist & Online consultations anywhere
-                        </li>
-                        <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
-                            <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
-                            Consultation our top specialists
-                        </li>
-                        <li class="list-group-item border-0 p-0 mb-3 d-flex justify-content-start align-items-center">
-                            <span class="badge pr-3"><img src="images/icon_check.svg" alt="icon"></span>
-                            Doctors are available 24/7
-                        </li>
-                    </ul>
-                    <a href="#doctor" class="btn btn-primary mb-2 mt-2">Explore specialists</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="our_service scrollflow -opacity -slide-top">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="description col-md-8 text-center justify-content-center">
-                    <h2>Our Service</h2>
-                    <p>Our doctors have high qualified skills and are guaranteed<br> to help you recover from your
-                        disease.
-                    </p>
-                </div>
-                <div class="col-12 owl-carousel service_carousel owl-theme justify-content-between align-items-center">
-                    <div class="item align-items-center">
-                        <div class="for_img d-flex justify-content-center">
-                            <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
-                        </div>
-                        <div class="text-center">
-                            <h4>Cardiology</h4>
-                            <p>Our cardiologists are skilled at the diagnosing and treating diseases
-                                of the cardiovascular system.</p>
-                        </div>
-                    </div>
-                    <div class="item align-items-center">
-                        <div class="for_img">
-                            <img src="images/icon_Pulmonology.svg" alt="icon_Cardiology">
-                        </div>
-                        <div class="text-center">
-                            <h4>Pulmonology</h4>
-                            <p>Our Pulmonologist are skilled at diagnosing treating diseases of the Pulmonology
-                                system.</p>
-                        </div>
-                    </div>
-                    <div class="item align-items-center">
-                        <div class="for_img">
-                            <img src="images/icon_Medicine.svg" alt="icon_Cardiology">
-                        </div>
-                        <div class="text-center">
-                            <h4>Medicine</h4>
-                            <p>Our medicine doctor are skilled at diagnosing treating diseases of the latest medicne
-                                system.</p>
-                        </div>
-                    </div>
-                    <div class="item align-items-center">
-                        <div class="for_img">
-                            <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
-                        </div>
-                        <div class="text-center">
-                            <h4>Cardiology2</h4>
-                            <p>Our cardiologists are skilled at the diagnosing and treating diseases
-                                of the cardiovascular system.</p>
-                        </div>
-                    </div>
-                    <div class="item align-items-center">
-                        <div class="for_img">
-                            <img src="images/icon_Cardiology.svg" alt="icon_Cardiology">
-                        </div>
-                        <div class="text-center">
-                            <h4>Cardiology3</h4>
-                            <p>Our cardiologists are skilled at the diagnosing and treating diseases
-                                of the cardiovascular system.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="meet_doctors scrollflow -opacity -slide-left" id="doctor">
-        <div class="container">
-            <div class="row description justify-content-center justify-content-md-between align-items-center text-center flex-sm-column">
-                <h2 class="col-lg-9">Meet Our Certified Online Doctors</h2>
-                <img class="col-1 d-block" src="images/Titletag.png" alt="img">
-                <p class="col-11 col-sm-10 col-md-8 col-lg-6">Our online doctors have an average of 15 years experience
-                    and
-                    a 98% satisfaction rating,
-                    they really
-                    set us apart!</p>
-            </div>
-            <div class="cards row row-cols-1 row-cols-lg-2 row-cols-xl-4 justify-content-center">
-
-                <div class="card col justify-content-center align-items-center">
-                    <div class="for_img view_img row justify-content-center align-items-center">
-                        <img src="images/doctor_Linda.jpg" class="col card-img-top d-block p-0" alt="doctor">
-                    </div>
-                    <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
-                        <h4 class="card-title col-12">Dr Amanda Linda</h4>
-                        <p class="card-text col-12">Dentist Specialist</p>
-                        <div class="row social justify-content-between align-items-center d-flex">
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card col justify-content-center align-items-center">
-                    <div class="for_img view_img row justify-content-center align-items-center">
-                        <img src="images/doctor_Rahman.jpg" class="col card-img-top d-block p-0" alt="doctor">
-                    </div>
-                    <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
-                        <h4 class="card-title col-12">Dr. Alisa Rahman</h4>
-                        <p class="card-text col-12">Cardiologist Specialist</p>
-                        <div class="row social justify-content-between align-items-center d-flex">
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card col justify-content-center align-items-center">
-                    <div class="for_img view_img row justify-content-center align-items-center">
-                        <img src="images/doctor_Fauci.jpg" class="col card-img-top d-block p-0" alt="doctor">
-                    </div>
-                    <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
-                        <h4 class="card-title col-12">Dr. Anthony Fauci</h4>
-                        <p class="card-text col-12">Neurology Specialist</p>
-                        <div class="row social justify-content-between align-items-center d-flex">
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card col justify-content-center align-items-center">
-                    <div class="for_img view_img row justify-content-center align-items-center">
-                        <img src="images/doctor_Abbed.jpg" class="col card-img-top d-block p-0" alt="doctor">
-                    </div>
-                    <div class="card-body row p-0 mt-3 mb-3 justify-content-center align-items-center text-center">
-                        <h4 class="card-title col-12">Dr. Khalid Abbed</h4>
-                        <p class="card-text col-12">Cancer Specialist</p>
-                        <div class="row social justify-content-between align-items-center d-flex">
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="btn col-3"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row pt-1 justify-content-center text-center after-posts">
-                <button type="button" class="btn btn-primary load-more">
-                    Explore All Doctors
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">
-                    </span>
-                </button>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="mobile_apps scrollflow -opacity -slide-right">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-9 col-md-8 col-lg-7 p-lg-0 order-2 order-lg-1 d-none d-sm-block">
-                    <img class="d-block w-100" src="images/Mockup.png" alt="mobile">
-                </div>
-                <div class="col col-12 col-lg-5 p-lg-0 order-1 order-lg-2 justify-content-start align-items-center">
-                    <h2>Mobile apps are available
-                        Get HealthCare for free!
-                    </h2>
-                    <p>Get on-demand access to a doctor on your phone with the free HealthCare mobile app. Download and
-                        register on our app for free and feel safe for all your family</p>
-                    <div class="for_img d-flex justify-content-center justify-content-lg-start align-items-center">
-                        <a href="#"><img class="d-block mr-2 mr-sm-4 mr-lg-2" src="images/Google_Play.png"
-                                         alt="Google Play"></a>
-                        <a href="#"><img class="d-block" src="images/App_Store.png" alt="App Store"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews scrollflow -opacity -slide-top">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col col-12 col-lg-9 p-lg-0 description text-center justify-content-center align-items-center">
-                    <h2>Look our Clients have to say about us</h2>
-                </div>
-                <div class="row card-deck reviews_carousel owl-carousel owl-theme justify-content-between align-items-center">
-                    <div class="col card m-2 m-md-0">
-                        <img class="card-img-top" src="images/client_1.png" alt="client">
-                        <div class="card-body p-0">
-                            <div class="row description justify-content-between">
-                                <div class="col col-8">
-                                    <h4>Alan Zara dilan</h4>
-                                    <p>New York, America, USA</p>
-                                </div>
-                                <div class="col col-4">
-                                    <img class="d-block" src="images/stars_5.svg" alt="stars">
-                                </div>
-                            </div>
-                            <blockquote>
-                                <p>Telehealth is fueled by digital technologies and DocTime telemedicine app has
-                                    brought
-                                    a
-                                    great
-                                    revolution in medical services specially an overpopulated country where virtual
-                                    chamber
-                                    can
-                                    create at anywhere throughout country
-                                </p>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="col card m-2 m-md-0">
-                        <img class="card-img-top" src="images/client_2.png" alt="client">
-                        <div class="card-body p-0">
-                            <div class="row description justify-content-between">
-                                <div class="col col-8">
-                                    <h4>Alex Maxwell</h4>
-                                    <p>San Francisco, USA</p>
-                                </div>
-                                <div class="col col-4">
-                                    <img class="d-block" src="images/stars_5.svg" alt="stars">
-                                </div>
-                            </div>
-                            <blockquote>
-                                <p>I visited my PCP for abdominal pain. My doctor told me that I need to see
-                                    Gastroenterologist.
-                                    Earlier I used to call multiple offices to schedule an appointment that suites
-                                    my
-                                    time.</p>
-                            </blockquote>
-                        </div>
-                    </div>
-
-                    <div class="col card m-2 m-md-0">
-                        <img class="card-img-top" src="images/client_3.png" alt="client">
-                        <div class="card-body p-0">
-                            <div class="row description justify-content-between">
-                                <div class="col col-8">
-                                    <h4>Dr. Tasnim zara</h4>
-                                    <p>Los Angeles, USA</p>
-                                </div>
-                                <div class="col col-4">
-                                    <img class="d-block" src="images/stars_5.svg" alt="stars">
-                                </div>
-                            </div>
-                            <blockquote>
-                                <p>HealthCare is enlightens my superpower each and every time...!
-                                    I find DocTime a brand-able telemedicine platform with virtual waiting room,
-                                    video
-                                    consultation, e-prescription, beautifully planned user interface.
-                                    Thank you :)</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="call_to_action scrollflow -opacity -slide-right">
-        <div class="container">
-            <div class="row content justify-content-start justify-content-lg-between align-items-center">
-                <div class="description col col-sm-8 col-md-6 col-lg-5 offset-1 pr-1 pl-1 pr-lg-0 pl-lg-0 justify-content-md-center justify-content-lg-start align-items-center">
-                    <h2>It’s time change your
-                        life today</h2>
-                    <button class="btn btn-outline-primary" type="submit">Book an Appoinment</button>
-                </div>
-                <div class="col col-md-6 col-lg-6 doctor_woman p-0">
-                    <img src="images/doctor_2.png" alt="img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="page_footer bg-white pb-4 pt-4">
-        <div class="container">
-            <div class="row footer_first d-flex justify-content-center justify-content-md-between align-items-start">
-                <div class="contact_info col-8 col-sm-7 col-md-4 p-2 p-lg-0 justify-content-center justify-content-md-start text-center text-md-left">
-                    <a class="logo" href="#">
-                        <img src="images/logo.svg" alt="logo">
-                    </a>
-                    <p>Metairie, 3689 Bassel Street, LA, Louisiana</p>
-                    <p>Contact us: 225-788-5489</p>
-
-                    <ul class="nav justify-content-center justify-content-md-start d-md-flex">
-                        <li class="nav-item pr-0 pr-sm-2 mr-2">
-                            <a href="#"><img src="images/Facebook.svg" alt="Facebook">
-                            </a>
-                        </li>
-                        <li class="nav-item pr-0 pr-sm-2 mr-2">
-                            <a href="#"><img src="images/Instagram.svg" alt="Instagram">
-                            </a>
-                        </li>
-                        <li class="nav-item pr-0 pr-sm-2 mr-2">
-                            <a href="#"><img src="images/Twitter.svg" alt="Twitter">
-                            </a>
-                        </li>
-                        <li class="nav-item pr-0 pr-sm-2 mr-2">
-                            <a href="#"><img src="images/Youtube.svg" alt="Youtube">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer_menu col-6 col-md-2 p-2 p-lg-0 text-center text-md-left">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <h4><a class="nav-link disabled" href="#">Category</a></h4>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Article</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer_menu col-6 col-md-2 p-2 p-lg-0 text-center text-md-left">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <h4><a class="nav-link disabled" href="#">About</a></h4>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Partners</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Press</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Community</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subscribe col-md-12 col-lg-4 p-3 p-lg-0 text-center text-lg-left">
-                    <h4 class="nav-link disabled">Subscribe newsletter</h4>
-                    <p>Sign up for tips, new destinations, and exclusive promos.</p>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1"></label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                   aria-describedby="emailHelp" placeholder="Enter your email">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Subcribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid"></div>
-    </footer>
-    <footer class="page_footer2 pt-1">
-        <div class="container">
-            <div class="footer_second row justify-content-between">
-                <div class="col col-12 col-sm-5 col-md-4 footer-copyright order-2 order-sm-1 d-flex justify-content-around justify-content-sm-between">
-                    <p>© 2021 Healthcare - All rights reserved.</p>
-                </div>
-                <div class="col col-12 col-sm-5 col-md-4 order-1 order-sm-2">
-                    <ul class="d-flex justify-content-around justify-content-sm-between">
-                        <li class="pr-2"><a href="#">Privacy</a></li>
-                        <li class="pr-2"><a href="#">Security</a></li>
-                        <li class="pr-2"><a href="#">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <!--<script src="js/bootstrap.js"></script>-->

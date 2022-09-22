@@ -13,23 +13,21 @@
   margin: 0;
 }
 
-body {
+bogy {
+
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
+
 }
 
-
 .wrapper {
-  &.container {
-    max-width: 1440px;
-    margin: auto;
-  }
-
   z-index: 1;
-  @include background(url("../images/bg_site.jpg") no-repeat center center);
-  background-size: cover;
+  background: url("../images/bg_site.jpg") no-repeat center center;
   height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -41,7 +39,6 @@ html {
   html {
     font-size: 0.75rem;
   }
-
 }
 
 @include media-breakpoint-up(md) {
@@ -81,6 +78,8 @@ h4 {
 }
 
 //_____________________________________________________________
+
+
 header {
   z-index: 3;
 
@@ -162,9 +161,6 @@ header {
     @include max-screen(991.98px) {
       margin-top: 2.5rem;
       margin-bottom: 2.5rem;
-    }
-    @include max-screen(576px) {
-      //height: auto;
     }
 
     h1 {
@@ -255,7 +251,6 @@ header {
       @include max-screen(992px) {
         width: 100%;
         margin: 0.5rem;
-
       }
 
       &:after {
@@ -285,8 +280,8 @@ header {
   .div_woman {
     z-index: 5;
     display: flex;
-    bottom: -3.9rem;
-    right: 0;
+    bottom: -3.6rem;
+    right: 1rem;
     max-width: 588px;
     margin: auto;
 
@@ -301,66 +296,70 @@ header {
 
   .div_circle {
     z-index: 4;
+    display: flex;
     bottom: -3.56rem;
-    right: -2.81rem;
+    right: -6.5rem;
+    max-width: 588px;
+    margin: auto;
 
     @include max-screen(992px) {
       display: none;
     }
 
     .main_img_circle {
-      width: 100%;
+      width: 80%;
     }
   }
 }
 
-.icons {
-  max-width: 588px;
-  margin: auto;
-}
+//
+//.icons {
+//  max-width: 588px;
+//  margin: auto;
+//}
+//
+//.div_icons {
+//  z-index: 6;
+//
+//  img {
+//    filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.05));
+//  }
 
-.div_icons {
-  z-index: 6;
-
-  img {
-    filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.05));
-  }
-
-  //&.icon1 {
-  //  bottom: -1.5rem;
-  //  left: 3.3rem;
-  //  max-width: 213px;
-  //  margin: auto;
-  //  img{
-  //    width: 100%;
-  //    display: block;
-  //  }
-  //}
-  //
-  //&.icon2 {
-  //  bottom: 50%;
-  //  right: 655px;
-  //  width: 70px
-  //}
-  //
-  //&.icon3 {
-  //  bottom: 425px;
-  //  left: 115px;
-  //  width: 93px;
-  //}
-  //
-  //&.icon4 {
-  //  bottom: 435px;
-  //  left: 615px;
-  //  width: 70px;
-  //}
-  //
-  //&.icon5 {
-  //  bottom: 125px;
-  //  left: 530px;
-  //  width: 162px;
-  //}
-}
+//&.icon1 {
+//  bottom: -1.5rem;
+//  left: 3.3rem;
+//  max-width: 213px;
+//  margin: auto;
+//  img{
+//    width: 100%;
+//    display: block;
+//  }
+//}
+//
+//&.icon2 {
+//  bottom: 50%;
+//  right: 655px;
+//  width: 70px
+//}
+//
+//&.icon3 {
+//  bottom: 425px;
+//  left: 115px;
+//  width: 93px;
+//}
+//
+//&.icon4 {
+//  bottom: 435px;
+//  left: 615px;
+//  width: 70px;
+//}
+//
+//&.icon5 {
+//  bottom: 125px;
+//  left: 530px;
+//  width: 162px;
+//}
+//}
 
 
 //__________________________________
@@ -378,8 +377,6 @@ header {
 
     img {
       width: 5.06rem;
-      //width: 81px;
-      //height: 80px;
     }
 
     .card-body {
@@ -396,6 +393,10 @@ header {
 //QUALITY SERVICE
 
 .quality_service {
+  .for_img {
+    max-width: 100%;
+  }
+
   p {
     color: $p_light_color;
     font-size: 1.125rem;
@@ -462,7 +463,6 @@ header {
         display: block;
         width: 100%;
         height: 4.81rem;
-        //height: 77px;
       }
     }
 
@@ -519,7 +519,6 @@ header {
     max-width: 349px;
     margin: auto;
     padding: 3.81rem 3.88rem 1.94rem 3.94rem;
-    //padding: 61px 62px 31px 63px;
 
     &.active {
 
@@ -549,6 +548,7 @@ header {
 
 //__________________________________
 //MEET DOCTORS
+
 .meet_doctors {
   padding-bottom: 7.625rem;
 
@@ -582,14 +582,6 @@ header {
     border: 1px solid #EEEFF1;
     filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.05));
     border-radius: 10px;
-
-    //&:first-of-type {
-    //  margin-left: 0;
-    //}
-    //
-    //&:last-of-type {
-    //  margin-right: 0;
-    //}
 
     .for_img {
       height: 249px;
@@ -755,12 +747,8 @@ header {
               background: linear-gradient(90.26deg, #47C2FF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-              //background-clip: text;
               text-fill-color: transparent;
-
-
             }
-
           }
         }
       }
@@ -783,7 +771,6 @@ header {
           box-shadow: 0 4px 40px rgba(0, 0, 0, 0.07);
           border-radius: 5px;
           padding: 0.44rem 0.69rem;
-          //padding: 7px 11px;
           display: inline-block;
 
         }
@@ -814,7 +801,6 @@ header {
           box-shadow: 0 4px 40px rgba(0, 0, 0, 0.07);
           border-radius: 5px;
           padding: 0.44rem 0.69rem;
-          //padding: 7px 11px;
           transform: rotateY(180deg);
           display: inline-block;
         }
@@ -832,7 +818,6 @@ header {
       }
     }
   }
-
 }
 
 //__________________________________
@@ -842,24 +827,21 @@ header {
   padding-bottom: 7.7rem;
   position: relative;
 
-
   .container {
     max-height: 21.31rem;
     background-color: $blue;
     border-radius: 12px;
 
-
     @include max-screen(576px) {
       border-radius: 0;
       margin: 0;
       padding: 0;
-
+      max-width: 100%;
     }
   }
 
   .content {
     position: relative;
-
   }
 
   .description {
@@ -891,23 +873,12 @@ header {
     }
   }
 
-
   .doctor_woman {
     position: absolute;
     right: 0;
-    //right: -0.375rem;
     bottom: 0.9375rem;
-    //bottom: 7.7rem;
-    //overflow: hidden;
+    overflow: hidden;
 
-    //@include max-screen(1272px) {
-    //  overflow: hidden;
-    //}
-
-    @include max-screen(992px) {
-      //right: -10px;
-      //bottom: 17px;
-    }
     @include max-screen(767px) {
       display: none;
     }
@@ -915,10 +886,8 @@ header {
     img {
       display: block;
       width: 100%;
-
     }
   }
-
 }
 
 // ____________________________
@@ -962,10 +931,6 @@ footer {
         margin-bottom: 1rem;
         margin-right: 0.5rem;
       }
-
-      li {
-        //margin-right: 1rem;
-      }
     }
 
     .footer_menu {
@@ -995,7 +960,6 @@ footer {
       background: $white;
       border: 1.1px solid #E1E2E4;
       border-radius: 5px;
-
     }
 
     .btn {
@@ -1009,12 +973,6 @@ footer {
         background-color: $white;
       }
     }
-  }
-}
-
-.page_footer2 {
-  .footer_second {
-
   }
 }
 

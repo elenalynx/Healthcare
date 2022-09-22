@@ -18438,7 +18438,7 @@ h3 {
   margin: 0;
 }
 
-body {
+bogy {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -18446,18 +18446,12 @@ body {
 
 .wrapper {
   z-index: 1;
-  -webkit-flex-direction: url("../images/bg_site.jpg") no-repeat center center;
-  -o-flex-background: url("../images/bg_site.jpg") no-repeat center center;
-  -moz-flex-background: url("../images/bg_site.jpg") no-repeat center center;
-  -ms-flex-background: url("../images/bg_site.jpg") no-repeat center center;
   background: url("../images/bg_site.jpg") no-repeat center center;
-  background-size: cover;
   height: 100%;
-  position: relative;
-}
-.wrapper.container {
   max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -18685,8 +18679,8 @@ header .navbar-nav .nav-item .nav-link:hover {
 .main_banner .div_woman {
   z-index: 5;
   display: flex;
-  bottom: -3.9rem;
-  right: 0;
+  bottom: -3.6rem;
+  right: 1rem;
   max-width: 588px;
   margin: auto;
 }
@@ -18700,8 +18694,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .main_banner .div_circle {
   z-index: 4;
+  display: flex;
   bottom: -3.56rem;
-  right: -2.81rem;
+  right: -6.5rem;
+  max-width: 588px;
+  margin: auto;
 }
 @media screen and (max-width: 992px) {
   .main_banner .div_circle {
@@ -18709,19 +18706,7 @@ header .navbar-nav .nav-item .nav-link:hover {
   }
 }
 .main_banner .div_circle .main_img_circle {
-  width: 100%;
-}
-
-.icons {
-  max-width: 588px;
-  margin: auto;
-}
-
-.div_icons {
-  z-index: 6;
-}
-.div_icons img {
-  filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.05));
+  width: 80%;
 }
 
 .easy_steps {
@@ -18743,6 +18728,9 @@ header .navbar-nav .nav-item .nav-link:hover {
   line-height: 1.43;
 }
 
+.quality_service .for_img {
+  max-width: 100%;
+}
 .quality_service p {
   color: rgba(61, 61, 63, 0.7);
   font-size: 1.125rem;
@@ -19085,6 +19073,7 @@ header .navbar-nav .nav-item .nav-link:hover {
     border-radius: 0;
     margin: 0;
     padding: 0;
+    max-width: 100%;
   }
 }
 .call_to_action .content {
@@ -19119,6 +19108,7 @@ header .navbar-nav .nav-item .nav-link:hover {
   position: absolute;
   right: 0;
   bottom: 0.9375rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .call_to_action .doctor_woman {
