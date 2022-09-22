@@ -18486,7 +18486,7 @@ html {
 }
 h1 {
   font-weight: 700;
-  line-height: 1.46;
+  line-height: 1.3;
   color: #3E3E3E;
 }
 
@@ -18587,16 +18587,18 @@ header .navbar-nav .nav-item .nav-link:hover {
   line-height: 2.14;
   margin-bottom: 3.125rem;
 }
-.main_banner .description .form_doctor_find {
+.main_banner .form_doctor_find {
   background: #FFFFFF;
   box-shadow: 0 4px 22px rgba(228, 245, 252, 0.3);
   border-radius: 8px;
+  padding: 0.8125rem 0.875rem 0.875rem 0.8125rem;
 }
-.main_banner .description .form_doctor_find > .form-row {
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
+@media screen and (max-width: 576px) {
+  .main_banner .form_doctor_find {
+    margin: 0;
+  }
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_doctor #input_doctors_name {
+.main_banner .form_doctor_find .div_input_doctor #input_doctors_name {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.3);
@@ -18605,13 +18607,18 @@ header .navbar-nav .nav-item .nav-link:hover {
   border: none;
   height: 3.69rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_doctor #input_doctors_name.form-control {
+@media screen and (max-width: 992px) {
+  .main_banner .form_doctor_find .div_input_doctor #input_doctors_name {
+    margin: 0.5rem;
+  }
+}
+.main_banner .form_doctor_find .div_input_doctor #input_doctors_name.form-control {
   padding: 1.06rem 0.125rem 1.125rem 1.875rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_state {
+.main_banner .form_doctor_find .div_input_state {
   display: inline-block;
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_state #input_state {
+.main_banner .form_doctor_find .div_input_state #input_state {
   font-size: 0.875rem;
   font-family: "Poppins", sans-serif;
   background: rgba(245, 246, 250, 0.52);
@@ -18619,127 +18626,102 @@ header .navbar-nav .nav-item .nav-link:hover {
   border: none;
   height: 3.69rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_state #input_state.form-control {
+@media screen and (max-width: 992px) {
+  .main_banner .form_doctor_find .div_input_state #input_state {
+    margin: 0.5rem;
+  }
+}
+.main_banner .form_doctor_find .div_input_state #input_state.form-control {
   position: relative;
   padding: 1.06rem 0.31rem 1.125rem 3.125rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_input_state:before {
+@media screen and (max-width: 576px) {
+  .main_banner .form_doctor_find .div_input_state #input_state.form-control {
+    padding: 1.06rem 0.31rem 0.8rem 2rem;
+  }
+}
+.main_banner .form_doctor_find .div_input_state:before {
   content: "";
   position: absolute;
   background: url("../images/Icon.svg") no-repeat;
   background-size: cover;
   width: 0.94rem;
   height: 1.19rem;
-  top: 50%;
   margin-right: 0.5rem;
   margin-left: 1.69rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_btn:after {
+.main_banner .form_doctor_find .btn {
+  background: #40A3F8;
+  border-radius: 8px;
+  width: 4.375rem;
+  height: 3.5rem;
+}
+@media screen and (max-width: 992px) {
+  .main_banner .form_doctor_find .btn {
+    width: 100%;
+    margin: 0.5rem;
+  }
+}
+.main_banner .form_doctor_find .btn:after {
   content: "";
   position: absolute;
   background: url("../images/Search_button.svg") no-repeat;
   background-size: cover;
   width: 1.75rem;
   height: 1.94rem;
-  top: 15px;
-  right: 31px;
+  top: 0.75rem;
+  right: 1.4rem;
 }
-.main_banner .description .form_doctor_find > .form-row .div_btn .btn {
-  background: #40A3F8;
-  border-radius: 8px;
-  width: 4.375rem;
-  height: 3.5rem;
+@media screen and (max-width: 992px) {
+  .main_banner .form_doctor_find .btn:after {
+    top: 31%;
+    right: 50%;
+  }
 }
 .main_banner select {
   padding-right: 1.25rem;
   overflow: hidden;
 }
-.main_banner .for_img {
-  height: 100vh;
-}
-@media screen and (max-width: 991.98px) {
-  .main_banner .for_img {
-    height: max-content;
-  }
-}
-.main_banner .for_img .div_woman {
+.main_banner .div_woman {
   z-index: 5;
   display: flex;
-  bottom: 0;
+  bottom: -3.9rem;
   right: 0;
-}
-@media screen and (max-width: 991.98px) {
-  .main_banner .for_img .div_woman {
-    position: relative;
-    justify-content: flex-end;
-    display: flex;
-    bottom: 0;
-  }
-}
-.main_banner .for_img .div_woman .main_img_woman {
-  width: 100%;
-}
-@media screen and (max-width: 991.98px) {
-  .main_banner .for_img .div_woman .main_img_woman {
-    width: 50%;
-  }
-}
-.main_banner .for_img .div_circle {
-  z-index: 4;
-  bottom: 20px;
-  right: 10px;
-}
-@media screen and (max-width: 991.98px) {
-  .main_banner .for_img .div_circle {
-    position: relative;
-    justify-content: flex-end;
-    display: flex;
-    right: 20px;
-    bottom: 30px;
-  }
-}
-.main_banner .for_img .div_circle .main_img_circle {
-  width: 100%;
-}
-@media screen and (max-width: 991.98px) {
-  .main_banner .for_img .div_circle .main_img_circle {
-    width: 50%;
-  }
-}
-.main_banner .for_img .icons {
   max-width: 588px;
   margin: auto;
 }
-.main_banner .for_img .div_icons {
+@media screen and (max-width: 992px) {
+  .main_banner .div_woman {
+    display: none;
+  }
+}
+.main_banner .div_woman .main_img_woman {
+  width: 100%;
+}
+.main_banner .div_circle {
+  z-index: 4;
+  bottom: -3.56rem;
+  right: -2.81rem;
+}
+@media screen and (max-width: 992px) {
+  .main_banner .div_circle {
+    display: none;
+  }
+}
+.main_banner .div_circle .main_img_circle {
+  width: 100%;
+}
+
+.icons {
+  max-width: 588px;
+  margin: auto;
+}
+
+.div_icons {
   z-index: 6;
 }
-.main_banner .for_img .div_icons img {
+.div_icons img {
   filter: drop-shadow(0px 4px 22px rgba(0, 0, 0, 0.05));
-}
-.main_banner .for_img .div_icons.icon1 {
-  bottom: 47px;
-  left: 100px;
-  width: 213px;
-}
-.main_banner .for_img .div_icons.icon2 {
-  bottom: 50%;
-  right: 655px;
-  width: 70px;
-}
-.main_banner .for_img .div_icons.icon3 {
-  bottom: 425px;
-  left: 115px;
-  width: 93px;
-}
-.main_banner .for_img .div_icons.icon4 {
-  bottom: 435px;
-  left: 615px;
-  width: 70px;
-}
-.main_banner .for_img .div_icons.icon5 {
-  bottom: 125px;
-  left: 530px;
-  width: 162px;
 }
 
 .easy_steps {
@@ -19135,13 +19117,8 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .call_to_action .doctor_woman {
   position: absolute;
-  right: -74px;
+  right: 0;
   bottom: 0.9375rem;
-}
-@media screen and (max-width: 992px) {
-  .call_to_action .doctor_woman {
-    right: -10px;
-  }
 }
 @media screen and (max-width: 767px) {
   .call_to_action .doctor_woman {
@@ -19150,7 +19127,7 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .call_to_action .doctor_woman img {
   display: block;
-  width: 110%;
+  width: 100%;
 }
 
 footer p {
