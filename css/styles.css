@@ -18442,11 +18442,12 @@ bogy {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  background-color: red;
 }
 
 .wrapper {
   z-index: 1;
-  background: url("../images/bg_site.jpg") no-repeat center center;
+  background: url("../images/bg_site.jpg") no-repeat;
   height: 100%;
   max-width: 1440px;
   margin: auto;
@@ -18456,6 +18457,7 @@ bogy {
 
 html {
   font-size: 0.75rem;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
