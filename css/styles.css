@@ -18442,7 +18442,6 @@ bogy {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: red;
 }
 
 .wrapper {
@@ -18457,7 +18456,6 @@ bogy {
 
 html {
   font-size: 0.75rem;
-  height: 100%;
 }
 
 @media (min-width: 576px) {
