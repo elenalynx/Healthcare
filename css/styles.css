@@ -18558,15 +18558,19 @@ header .navbar-nav .nav-item .nav-link:hover {
   align-items: center;
   z-index: 2;
 }
+@media screen and (max-width: 992px) {
+  .main_banner {
+    height: 100%;
+  }
+}
 .main_banner .description {
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 5.81rem;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 992px) {
   .main_banner .description {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 3.5rem;
   }
 }
 .main_banner .description h1 {
@@ -18580,6 +18584,12 @@ header .navbar-nav .nav-item .nav-link:hover {
   color: rgba(117, 117, 117, 0.46);
   line-height: 2.14;
   margin-bottom: 3.125rem;
+}
+@media screen and (max-width: 1200px) {
+  .main_banner .description p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
 }
 .main_banner .form_doctor_find {
   background: #FFFFFF;
@@ -18679,14 +18689,16 @@ header .navbar-nav .nav-item .nav-link:hover {
 .main_banner .div_woman {
   z-index: 5;
   display: flex;
-  bottom: -3.6rem;
-  right: 1rem;
-  max-width: 588px;
+  bottom: -5.7rem;
+  right: 0;
+  max-width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 @media screen and (max-width: 992px) {
   .main_banner .div_woman {
-    display: none;
+    bottom: -0.5rem;
+    right: 9%;
   }
 }
 .main_banner .div_woman .main_img_woman {
@@ -18697,12 +18709,19 @@ header .navbar-nav .nav-item .nav-link:hover {
   display: flex;
   bottom: -3.56rem;
   right: -6.5rem;
-  max-width: 588px;
+  max-width: 100%;
   margin: auto;
+  overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .main_banner .div_circle {
+    right: -6rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .main_banner .div_circle {
-    display: none;
+    bottom: 0;
+    right: -10%;
   }
 }
 .main_banner .div_circle .main_img_circle {
@@ -18712,6 +18731,12 @@ header .navbar-nav .nav-item .nav-link:hover {
 .easy_steps {
   padding-top: 4.69rem;
   padding-bottom: 4.69rem;
+}
+@media screen and (max-width: 992px) {
+  .easy_steps {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 .easy_steps .card {
   border: none;
@@ -18751,9 +18776,16 @@ header .navbar-nav .nav-item .nav-link:hover {
 }
 .quality_service .btn:after {
   content: url("../images/icon_arrow-right.svg");
+  max-width: 100%;
   position: absolute;
-  top: 12px;
+  top: 11.5px;
   right: 18px;
+}
+@media screen and (max-width: 992px) {
+  .quality_service .btn:after {
+    top: 6.5px;
+    right: 13px;
+  }
 }
 .quality_service .btn:hover {
   color: #40A3F8;
@@ -18766,6 +18798,12 @@ header .navbar-nav .nav-item .nav-link:hover {
 .our_service {
   padding-top: 8.94rem;
   padding-bottom: 7.5rem;
+}
+@media screen and (max-width: 992px) {
+  .our_service {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 .our_service .description h2 {
   margin-bottom: 1.5rem;
@@ -18792,6 +18830,9 @@ header .navbar-nav .nav-item .nav-link:hover {
   color: #999999;
 }
 
+.service_carousel {
+  max-width: 100%;
+}
 .service_carousel .owl-stage-outer {
   background: none;
 }
@@ -18845,6 +18886,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 .meet_doctors {
   padding-bottom: 7.625rem;
 }
+@media screen and (max-width: 992px) {
+  .meet_doctors {
+    padding-bottom: 5rem;
+  }
+}
 .meet_doctors .container {
   max-width: 1176px;
   margin: auto;
@@ -18860,6 +18906,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 .meet_doctors p {
   margin-bottom: 4.313rem;
   color: rgba(61, 61, 63, 0.7);
+}
+@media screen and (max-width: 992px) {
+  .meet_doctors p {
+    margin-bottom: 1rem;
+  }
 }
 .meet_doctors .card {
   max-width: 267px;
@@ -18928,6 +18979,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 .mobile_apps {
   padding-bottom: 7.5rem;
 }
+@media screen and (max-width: 992px) {
+  .mobile_apps {
+    padding-bottom: 3rem;
+  }
+}
 .mobile_apps h2 {
   margin-bottom: 1.875rem;
 }
@@ -18941,12 +18997,22 @@ header .navbar-nav .nav-item .nav-link:hover {
 .reviews {
   padding-bottom: 11.19rem;
 }
+@media screen and (max-width: 992px) {
+  .reviews {
+    padding-bottom: 7rem;
+  }
+}
 .reviews > .container {
   max-width: 1375px;
   margin: auto;
 }
 .reviews h2 {
   margin-bottom: 4.25rem;
+}
+@media screen and (max-width: 992px) {
+  .reviews h2 {
+    margin-bottom: 2rem;
+  }
 }
 .reviews .reviews_carousel {
   padding: 1.56rem 6rem 1.19rem 6.25rem;
@@ -19062,6 +19128,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 .call_to_action {
   padding-bottom: 7.7rem;
   position: relative;
+}
+@media screen and (max-width: 992px) {
+  .call_to_action {
+    padding-bottom: 7rem;
+  }
 }
 .call_to_action .container {
   max-height: 21.31rem;

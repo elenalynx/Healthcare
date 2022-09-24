@@ -47,18 +47,14 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
-                // margin: 65,
             },
-            // 567: {
-            //
-            // },
-            767: {
+            567: {
                 items: 2,
                 margin: 35,
             },
-            // 992: {
-            //     // margin: 35,
-            // },
+            767: {
+                margin: 35,
+            },
             1200: {
                 items: 3,
             },

@@ -150,23 +150,26 @@ header {
   justify-content: flex-start;
   align-items: center;
   z-index: 2;
+  @include max-screen(992px) {
+    height: 100%;
+  }
 
   .description {
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 5.81rem;
+    //margin-bottom: 5.81rem;
 
-    @include max-screen(991.98px) {
-      margin-top: 2.5rem;
-      margin-bottom: 2.5rem;
+    @include max-screen(992px) {
+      margin-top: 10rem;
+      margin-bottom: 3.5rem;
     }
 
     h1 {
+      margin-bottom: 1.94rem;
+
       > span {
         color: $blue;
       }
-
-      margin-bottom: 1.94rem;
     }
 
     p {
@@ -174,6 +177,10 @@ header {
       color: $main_light_color;
       line-height: 2.14;
       margin-bottom: 3.125rem;
+      @include max-screen(1200px) {
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
@@ -278,13 +285,18 @@ header {
   .div_woman {
     z-index: 5;
     display: flex;
-    bottom: -3.6rem;
-    right: 1rem;
-    max-width: 588px;
+    bottom: -5.7rem;
+    right: 0;
+    //max-width: 588px;
+    max-width: 100%;
     margin: auto;
+    overflow: hidden;
+
 
     @include max-screen(992px) {
-      display: none;
+      //display: none;
+      bottom: -0.5rem;
+      right: 9%;
     }
 
     .main_img_woman {
@@ -297,11 +309,20 @@ header {
     display: flex;
     bottom: -3.56rem;
     right: -6.5rem;
-    max-width: 588px;
+    //max-width: 588px;
+    max-width: 100%;
     margin: auto;
+    overflow: hidden;
+
+
+    @include max-screen(1200px) {
+      right: -6rem;
+    }
 
     @include max-screen(992px) {
-      display: none;
+      //display: none;
+      bottom: 0;
+      right: -10%;
     }
 
     .main_img_circle {
@@ -366,6 +387,10 @@ header {
 .easy_steps {
   padding-top: 4.69rem;
   padding-bottom: 4.69rem;
+  @include max-screen(992px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   .card {
     border: none;
@@ -417,9 +442,14 @@ header {
 
     &:after {
       content: url("../images/icon_arrow-right.svg");
+      max-width: 100%;
       position: absolute;
-      top: 12px;
+      top: 11.5px;
       right: 18px;
+      @include max-screen(992px){
+        top: 6.5px;
+        right: 13px;
+      }
     }
 
     &:hover {
@@ -439,6 +469,10 @@ header {
 .our_service {
   padding-top: 8.94rem;
   padding-bottom: 7.5rem;
+  @include max-screen(992px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 
   .description {
     h2 {
@@ -477,6 +511,7 @@ header {
 }
 
 .service_carousel {
+  max-width: 100%;
 
   .owl-stage-outer {
     background: none;
@@ -549,6 +584,9 @@ header {
 
 .meet_doctors {
   padding-bottom: 7.625rem;
+  @include max-screen(992px) {
+    padding-bottom: 5rem;
+  }
 
   .container {
     max-width: 1176px;
@@ -570,6 +608,9 @@ header {
   p {
     margin-bottom: 4.313rem;
     color: $p_light_color;
+    @include max-screen(992px) {
+      margin-bottom: 1rem;
+    }
   }
 
   .card {
@@ -660,6 +701,9 @@ header {
 
 .mobile_apps {
   padding-bottom: 7.5rem;
+  @include max-screen(992px) {
+    padding-bottom: 3rem;
+  }
 
   h2 {
     margin-bottom: 1.875rem;
@@ -678,6 +722,9 @@ header {
 
 .reviews {
   padding-bottom: 11.19rem;
+  @include max-screen(992px) {
+    padding-bottom: 7rem;
+  }
 
   > .container {
     max-width: 1375px;
@@ -686,6 +733,9 @@ header {
 
   h2 {
     margin-bottom: 4.25rem;
+    @include max-screen(992px) {
+      margin-bottom: 2rem;
+    }
   }
 
   .reviews_carousel {
@@ -770,7 +820,6 @@ header {
           border-radius: 5px;
           padding: 0.44rem 0.69rem;
           display: inline-block;
-
         }
 
         &:hover,
@@ -824,6 +873,9 @@ header {
 .call_to_action {
   padding-bottom: 7.7rem;
   position: relative;
+  @include max-screen(992px) {
+    padding-bottom: 7rem;
+  }
 
   .container {
     max-height: 21.31rem;
