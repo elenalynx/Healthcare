@@ -93,6 +93,16 @@ $(document).ready(function () {
 });
 
 
+
+// var trigger = document.getElementById('toggle');
+// var box = document.getElementById('menu');
+//
+// toggle.addEventListener('click', function() {
+//     box.classList.toggle('active');
+// });
+
+
+
 // $('.step-slider').on('changed.owl.carousel', function (event) {
 //     var idx = event.item.index; // номер активного элемента
 // });
