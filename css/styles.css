@@ -18447,9 +18447,8 @@ bogy {
 .wrapper {
   z-index: 1;
   background: url("../images/bg_site.jpg") no-repeat center center;
+  background-size: cover;
   height: 100%;
-  max-width: 1440px;
-  margin: auto;
   overflow-x: hidden;
   position: relative;
 }
